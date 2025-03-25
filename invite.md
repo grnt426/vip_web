@@ -3,6 +3,8 @@ layout: default
 title: VIP Invites
 ---
 
+# Invites
+
 <!-- Input section for new user and guild name -->
 <div style="margin-bottom: 1em;">
   <label for="newUser">New User: </label>
@@ -22,7 +24,7 @@ title: VIP Invites
 
 <!-- Display the updated welcome message -->
 <p id="welcomeMessage">
-  ┌(^∇')7 ★ Hey look everyone! ★ New friends! ★ Everyone please welcome NEW_USER to GUILD_NAME ★ ┌(^∇')/\<('-^)┐
+  ┌(^∇')7 ★ Hey look everyone! ★ New friends! ★ Everyone please welcome NEW_USER to VIPower ★ ┌(^∇')/\<('-^)┐
 </p>
 
 <script>
