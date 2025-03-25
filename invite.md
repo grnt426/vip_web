@@ -51,9 +51,7 @@ title: VIP Invites
     
     // Use the Clipboard API to copy the text
     navigator.clipboard.writeText(message)
-      .then(function() {
-        alert("Message copied to clipboard!");
-      })
+      .then(function() {})
       .catch(function(err) {
         alert("Error copying message: " + err);
       });
