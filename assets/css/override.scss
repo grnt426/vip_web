@@ -2,7 +2,7 @@
 # assets/css/override.scss
 ---
 
-@import "slate";
+@import "{{ site.theme }}";
 
 #forkme_banner {
   display: none !important;
