@@ -27,6 +27,9 @@ title: VIP Invites
   ┌(^∇')7 ★ Hey look everyone! ★ New friends! ★ Everyone please welcome NEW_USER to VIPower ★ ┌(^∇')/\<('-^)┐
 </p>
 
+<!-- Button to copy the welcome message -->
+<button onclick="copyMessage()">Copy Message</button>
+
 <script>
   function updateMessage() {
     // Get input values; if empty, use placeholders
@@ -40,5 +43,19 @@ title: VIP Invites
     
     // Update the text content of the paragraph
     document.getElementById("welcomeMessage").textContent = message;
+  }
+  
+  function copyMessage() {
+    // Retrieve the text from the welcome message
+    var message = document.getElementById("welcomeMessage").textContent;
+    
+    // Use the Clipboard API to copy the text
+    navigator.clipboard.writeText(message)
+      .then(function() {
+        alert("Message copied to clipboard!");
+      })
+      .catch(function(err) {
+        alert("Error copying message: " + err);
+      });
   }
 </script>
